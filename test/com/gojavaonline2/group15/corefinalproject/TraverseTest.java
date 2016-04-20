@@ -1,9 +1,8 @@
-package test.gojavaonline2.group15.corefinalproject;
+package com.gojavaonline2.group15.corefinalproject;
 
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import com.gojavaonline2.group15.corefinalproject.*;
 
 import static junit.framework.TestCase.assertEquals;
 

@@ -5,6 +5,7 @@ import java.util.Scanner;
 // в данном классе организовывается создание дерева с консоли
 
 public class ConsoleTreeCreator {
+    private static Tree<Integer> tree;
 
     public Tree<Integer> readDataFromConsole() {
         System.out.println("Введите, через Enter, ключи вашего дерева, следуюя принципам:\n" +
@@ -15,7 +16,7 @@ public class ConsoleTreeCreator {
                 "ключи меньшие (соответственно большие) чем X\n" +
                 "4. Для завершения создания введите 0\n" +
                 "5. Ключи должны быть уникальные(т.е. не повторятся)");
-        Tree<Integer> tree = new Tree<>();
+        tree = new Tree<>();
         int addNodeValue;
         while (true) {
             addNodeValue = readDataFromConsoleScanner();
