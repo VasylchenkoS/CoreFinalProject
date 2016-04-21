@@ -8,7 +8,7 @@ import java.util.Locale;
 public class Node<T extends Comparable<T>> implements Comparable<T> {
     private Node<T> left;   // указатель на левого потомка
     private Node<T> right;  // указатель на правого потомка
-    private T value;        // ключ узла
+    private final T value;        // ключ узла
 
 //    создаем констуктор, а так же getter и setter для єлементов класса
 

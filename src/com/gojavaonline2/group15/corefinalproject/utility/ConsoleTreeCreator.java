@@ -10,10 +10,7 @@ public class ConsoleTreeCreator {
 
     private static Tree<Integer> tree;
 
-    public static Tree<Integer> getTree() {
-        return tree;
-    }
-    public static void setTree(Tree<Integer> tree) {
+    private static void setTree(Tree<Integer> tree) {
         ConsoleTreeCreator.tree = tree;
     }
 
@@ -39,7 +36,7 @@ public class ConsoleTreeCreator {
         return tTree;
     }
 
-    public void readDataFromConsoleScanner() {
+    private void readDataFromConsoleScanner() {
         int currentNodeValue;
         Set<Integer> nodeList = new TreeSet<>();
         try {
@@ -50,7 +47,7 @@ public class ConsoleTreeCreator {
                     if (currentNodeValue == 0)
                         break;
                     else if(nodeList.contains(currentNodeValue)) {
-                        System.out.println("[Error:] Ключи не должны повторятся!");
+                        System.out.println("[Error: Key not accepted.] Ключи не должны повторятся!");
                     }
                     else nodeList.add(currentNodeValue);
                 } catch (Exception ignored) {

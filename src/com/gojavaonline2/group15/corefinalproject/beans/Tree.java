@@ -44,7 +44,7 @@ public class Tree<T extends Comparable<T>> {
 
 //      Ключи не должны повторятся!
         if (root.getValue().compareTo(value)==0){
-            System.out.println("[Error:] Ключи не должны повторятся!");
+            System.out.println("[Error: Key not accepted.] Ключи не должны повторятся!");
             return;
         }
 

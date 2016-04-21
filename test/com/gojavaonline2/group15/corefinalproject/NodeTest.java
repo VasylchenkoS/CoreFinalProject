@@ -1,7 +1,7 @@
 package com.gojavaonline2.group15.corefinalproject;
 
 import com.gojavaonline2.group15.corefinalproject.beans.Tree;
-import junit.framework.Assert;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -11,8 +11,9 @@ import java.util.Arrays;
 @RunWith(value = Parameterized.class)
 public class NodeTest {
 
-    private int a, b;
-    private int expected;
+    private final int a;
+    private final int b;
+    private final int expected;
 
     public NodeTest(int a, int b, int expected){
         this.a = a;
