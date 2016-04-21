@@ -4,8 +4,6 @@ import com.gojavaonline2.group15.corefinalproject.beans.Tree;
 
 import java.util.*;
 
-// в данном классе организовывается создание дерева с консоли
-
 public class ConsoleTreeCreator {
 
     private static Tree<Integer> tree;

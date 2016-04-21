@@ -8,7 +8,6 @@ import com.gojavaonline2.group15.corefinalproject.beans.Tree;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-//в данном классе обработана связь с пользователем посредством консоли.
 
 public class UserConsoleInterface {
     private Tree tree = null;
