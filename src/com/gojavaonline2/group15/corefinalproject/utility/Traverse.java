@@ -1,4 +1,6 @@
-package com.gojavaonline2.group15.corefinalproject;
+package com.gojavaonline2.group15.corefinalproject.utility;
+
+import com.gojavaonline2.group15.corefinalproject.beans.Node;
 
 //  Обход дерева, это процесс обхождения всех узлов и их обрабатывании. Существует три типа обхода дерева:
 //  Inorder – посещение левого поддерева, корня и правого поддерева.

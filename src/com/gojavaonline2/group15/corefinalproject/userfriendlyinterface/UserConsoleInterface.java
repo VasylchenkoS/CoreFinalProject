@@ -1,4 +1,9 @@
-package com.gojavaonline2.group15.corefinalproject;
+package com.gojavaonline2.group15.corefinalproject.userfriendlyinterface;
+
+import com.gojavaonline2.group15.corefinalproject.utility.ConsoleTreeCreator;
+import com.gojavaonline2.group15.corefinalproject.utility.SimpleTreeCreator;
+import com.gojavaonline2.group15.corefinalproject.utility.Traverse;
+import com.gojavaonline2.group15.corefinalproject.beans.Tree;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -8,7 +13,7 @@ import java.io.InputStreamReader;
 public class UserConsoleInterface {
     private Tree tree = null;
 
-    UserConsoleInterface() {
+    public UserConsoleInterface() {
         System.out.println("Введите число, чтобы начать работу:\n" +
                 "1. Создать Simple дерево с корнями Integer\n" +
                 "2. Создать Simple дерево с корнями String\n" +

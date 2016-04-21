@@ -1,5 +1,7 @@
 package com.gojavaonline2.group15.corefinalproject;
 
+import com.gojavaonline2.group15.corefinalproject.beans.Tree;
+import com.gojavaonline2.group15.corefinalproject.utility.Traverse;
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;

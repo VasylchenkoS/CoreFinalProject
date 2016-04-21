@@ -1,4 +1,4 @@
-package com.gojavaonline2.group15.corefinalproject;
+package com.gojavaonline2.group15.corefinalproject.beans;
 
 //  Дерево - структура данных, которая может быть использована для моделирования
 //  различных связей между объектами из реального мира. Также деревья могут быть

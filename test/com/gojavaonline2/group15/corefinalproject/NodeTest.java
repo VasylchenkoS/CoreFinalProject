@@ -1,5 +1,6 @@
 package com.gojavaonline2.group15.corefinalproject;
 
+import com.gojavaonline2.group15.corefinalproject.beans.Tree;
 import junit.framework.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

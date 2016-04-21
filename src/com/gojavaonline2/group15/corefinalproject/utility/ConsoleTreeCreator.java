@@ -1,8 +1,8 @@
-package com.gojavaonline2.group15.corefinalproject;
+package com.gojavaonline2.group15.corefinalproject.utility;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
+import com.gojavaonline2.group15.corefinalproject.beans.Tree;
+
+import java.util.*;
 
 // в данном классе организовывается создание дерева с консоли
 
@@ -32,7 +32,7 @@ public class ConsoleTreeCreator {
         else return null;
     }
 
-    public static Tree<Integer> createTree(List<Integer> nodeValue) {
+    public static Tree<Integer> createTree(Set<Integer> nodeValue) {
         Tree<Integer> tTree = new Tree<>();
         nodeValue.forEach(tTree::add);
         setTree(tTree);
@@ -40,8 +40,8 @@ public class ConsoleTreeCreator {
     }
 
     public void readDataFromConsoleScanner() {
-        int currentNodeValue = 0;
-        List<Integer> nodeList = new LinkedList<>();
+        int currentNodeValue;
+        Set<Integer> nodeList = new TreeSet<>();
         try {
             Scanner scannerInputValue = new Scanner(System.in);
             while (true) {
@@ -49,6 +49,9 @@ public class ConsoleTreeCreator {
                     currentNodeValue = scannerInputValue.nextInt();
                     if (currentNodeValue == 0)
                         break;
+                    else if(nodeList.contains(currentNodeValue)) {
+                        System.out.println("[Error:] Ключи не должны повторятся!");
+                    }
                     else nodeList.add(currentNodeValue);
                 } catch (Exception ignored) {
                     System.out.println("[Error:] Тип значений должен быть Integer");

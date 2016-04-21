@@ -1,21 +1,24 @@
 package com.gojavaonline2.group15.corefinalproject;
 
+import com.gojavaonline2.group15.corefinalproject.beans.Tree;
+import com.gojavaonline2.group15.corefinalproject.utility.ConsoleTreeCreator;
+import com.gojavaonline2.group15.corefinalproject.utility.Traverse;
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import static junit.framework.TestCase.assertEquals;
 
 public class ConsoleTreeCreatorTest {
 
-    private static List<Integer> keyList;
+    private static Set<Integer> keyList;
 
     @BeforeClass
     public static void setUpClassTestStart() throws Exception {
-        keyList = new LinkedList<>();
+        keyList = new TreeSet<>();
         keyList.add(10);
         keyList.add(35);
         keyList.add(5);

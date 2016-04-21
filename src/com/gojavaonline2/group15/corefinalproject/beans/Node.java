@@ -1,4 +1,4 @@
-package com.gojavaonline2.group15.corefinalproject;
+package com.gojavaonline2.group15.corefinalproject.beans;
 
 import java.text.Collator;
 import java.util.Locale;

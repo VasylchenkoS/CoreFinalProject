@@ -1,4 +1,6 @@
-package com.gojavaonline2.group15.corefinalproject;
+package com.gojavaonline2.group15.corefinalproject.utility;
+
+import com.gojavaonline2.group15.corefinalproject.beans.Tree;
 
 public class SimpleTreeCreator {
     public Tree<Integer> simpleIntegerTreeCreator() {
