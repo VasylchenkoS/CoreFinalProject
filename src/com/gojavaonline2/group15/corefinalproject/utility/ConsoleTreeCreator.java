@@ -50,6 +50,9 @@ public class ConsoleTreeCreator {
                     else nodeList.add(currentNodeValue);
                 } catch (Exception ignored) {
                     System.out.println("[Error:] Тип значений должен быть Integer");
+                    nodeList = null;
+                    System.out.println("Дерево не удалось создать");
+                    break;
                 }
             }
         } catch (Exception e) {
